@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intellipunk - The Manifesto</title>
+  <meta name="description" content="Intellipunk is not anti-AI. Intellipunk is anti-AI empires. High Intellect. Low Conformity.">
+  <meta property="og:title" content="The Intellipunk Manifesto">
+  <meta property="og:description" content="Intellipunk is not anti-AI. Intellipunk is anti-AI empires.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://intellipunk.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Intellipunk Manifesto">
+  <meta name="twitter:description" content="High Intellect. Low Conformity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --black: #1b1b1b;
+      --dark: #111111;
+      --gray-dark: #1a1a1a;
+      --gray: #888888;
+      --light: #e0e0e0;
+      --white: #f5f5f5;
+      --accent: #00ff88;
+      --accent-dim: #00cc6a;
+      --accent-glow: rgba(0, 255, 136, 0.08);
+      --rule: #222222;
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--light);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: var(--black);
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 6rem 2rem 8rem;
+    }
+
+    /* ── Header ── */
+    .header {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    .title {
+      font-family: 'Space Mono', monospace;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--accent);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    /* ── Opening ── */
+    .opening {
+      margin-bottom: 4rem;
+    }
+
+    .opening .lead {
+      font-size: 1.15rem;
+      color: var(--white);
+      font-weight: 400;
+      margin-bottom: 0.4rem;
+    }
+
+    .opening .lead-strong {
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    .opening p {
+      margin-bottom: 1.2rem;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-bottom: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .section-number {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent-dim);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      margin-bottom: 1.2rem;
+    }
+
+    .section .callout {
+      color: var(--white);
+      font-weight: 400;
+    }
+
+    .section .callout strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .section .punch {
+      color: var(--white);
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* ── Aesthetic ── */
+    .aesthetic-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .aesthetic-list li {
+      padding: 0.4rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+      color: var(--light);
+    }
+
+    .aesthetic-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    /* ── Trinity ── */
+    .trinity {
+      margin: 2rem 0;
+    }
+
+    .trinity-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .trinity-item:first-child {
+      border-top: 1px solid var(--rule);
+    }
+
+    .trinity-claim {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      color: var(--white);
+      font-size: 1rem;
+    }
+
+    .trinity-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--accent-dim);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── Commitments ── */
+    .commitments-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+
+    .commitments-list li {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+
+    .commitments-list li span {
+      color: var(--gray);
+    }
+
+    .requirements {
+      margin-top: 1.5rem;
+      color: var(--white);
+      font-weight: 400;
+    }
+
+    /* ── The Line ── */
+    .the-line {
+      margin-top: 5rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .the-line p {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.1rem;
+      color: var(--gray);
+      margin-bottom: 1rem;
+    }
+
+    .the-line .final {
+      font-size: 1.3rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 5rem;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--gray);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      html { font-size: 16px; }
+      .container { padding: 4rem 1.5rem 6rem; }
+      .title { font-size: 1.8rem; }
+      .section-title { font-size: 1.1rem; }
+      .trinity-item { flex-direction: column; gap: 0.2rem; }
+    }
+
+    /* ── Subtle animation ── */
+    @media (prefers-reduced-motion: no-preference) {
+      .section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.6s ease forwards;
+      }
+      .section:nth-child(1) { animation-delay: 0.1s; }
+      .section:nth-child(2) { animation-delay: 0.15s; }
+      .section:nth-child(3) { animation-delay: 0.2s; }
+      .section:nth-child(4) { animation-delay: 0.25s; }
+      .section:nth-child(5) { animation-delay: 0.3s; }
+      .section:nth-child(6) { animation-delay: 0.35s; }
+      .section:nth-child(7) { animation-delay: 0.4s; }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">Intellipunk</h1>
+      <p class="subtitle">High Intellect &middot; Low Conformity</p>
+    </header>
+
+    <!-- Opening -->
+    <div class="opening">
+      <p class="lead">Intellipunk is not anti-AI.</p>
+      <p class="lead-strong">Intellipunk is anti-AI empires.</p>
+      <p>We treat centralized intelligence the way cyberpunk treated megacorps - as an existential risk to human agency. When AI becomes too large, too opaque, too concentrated, it stops being a tool and becomes an operating system for society. An operating system nobody elected. An operating system you cannot fork, cannot audit, cannot shut off.</p>
+      <p>Intellipunk exists to prevent that OS from becoming unmodifiable.</p>
+    </div>
+
+    <!-- I. Computational Feudalism -->
+    <div class="section">
+      <p class="section-number">I</p>
+      <h2 class="section-title">Against Computational Feudalism</h2>
+      <p>A handful of corporations own the models. A handful own the hardware. Everyone else rents cognition on someone else&rsquo;s terms, on someone else&rsquo;s schedule, at someone else&rsquo;s price.</p>
+      <p class="punch">This is feudalism. You are a tenant in someone else&rsquo;s mind.</p>
+      <p>If you can&rsquo;t leave, you don&rsquo;t own it. If you can&rsquo;t run it yourself, it was never yours.</p>
+      <p class="callout"><strong>We answer with autonomy.</strong> Self-hosted models. Community GPU clusters. Local inference. Exit paths that actually exit. The right to compute is the right to think - and no one should need permission to think.</p>
+    </div>
+
+    <!-- II. Extractive Clouds -->
+    <div class="section">
+      <p class="section-number">II</p>
+      <h2 class="section-title">Against Extractive Clouds</h2>
+      <p class="punch">The cloud is not the sky. The cloud is someone else&rsquo;s building.</p>
+      <p>Central AI pulls your data in and pumps value out. You are not the customer. You are not even the product. You are raw material - fed into an optimization function you never consented to and cannot inspect.</p>
+      <p class="callout"><strong>We answer with distribution.</strong> Push compute outward. Solar-backed nodes. Edge clusters. Peer-to-peer inference. Federated infrastructure where the network serves the nodes, not the other way around.</p>
+    </div>
+
+    <!-- III. Epistemic Gatekeeping -->
+    <div class="section">
+      <p class="section-number">III</p>
+      <h2 class="section-title">Against Epistemic Gatekeeping</h2>
+      <p>When the model is closed, the worldview is imposed. Closed systems become arbiters of truth and culture without accountability - invisible editors of what billions of people can know, ask, and imagine.</p>
+      <p class="punch">No one voted for this. No one can appeal it.</p>
+      <p class="callout"><strong>We answer with transparency.</strong> Inspectable models. Verifiable training data. Provenance on every output. Audit trails that go all the way down. Open forks so that when you disagree with the oracle, you can build your own.</p>
+      <p>If you can&rsquo;t see inside it, you can&rsquo;t trust it.</p>
+    </div>
+
+    <!-- IV. Energy Chokepoints -->
+    <div class="section">
+      <p class="section-number">IV</p>
+      <h2 class="section-title">Against Energy Chokepoints</h2>
+      <p>Centralized AI depends on centralized power. Massive data centers need massive grid access, massive capital, massive political permission. Control the energy, control the compute. Control the compute, control who gets to think at scale.</p>
+      <p class="punch">This is the chokepoint they don&rsquo;t talk about.</p>
+      <p class="callout"><strong>We answer with distributed energy.</strong> Solar-backed nodes. Local storage. Schedulable workloads that follow the sun. Verifiable energy receipts. Compute that runs on power you generate, not power you beg for.</p>
+    </div>
+
+    <!-- The Aesthetic -->
+    <div class="section">
+      <p class="section-number">&nbsp;</p>
+      <h2 class="section-title">The Aesthetic</h2>
+      <p>Intellipunk is not neon lights. It&rsquo;s not steam engines. It&rsquo;s not a costume.</p>
+      <ul class="aesthetic-list">
+        <li>A rack of refurbished GPUs cooling in a garage.</li>
+        <li>A chat interface that works when the internet is down.</li>
+        <li>A solar panel wired to an inference node in someone&rsquo;s backyard.</li>
+        <li>The intentional breaking of guardrails - the glitch - to test the limits of a system that claims to be for your benefit.</li>
+        <li>An open source repo mirrored on a thousand drives - the library of Alexandria, distributed so it can never burn.</li>
+      </ul>
+    </div>
+
+    <!-- The Trinity -->
+    <div class="section">
+      <p class="section-number">&nbsp;</p>
+      <h2 class="section-title">The Trinity</h2>
+      <div class="trinity">
+        <div class="trinity-item">
+          <span class="trinity-claim">&ldquo;I own the model.&rdquo;</span>
+          <span class="trinity-label">Anti-Empire</span>
+        </div>
+        <div class="trinity-item">
+          <span class="trinity-claim">&ldquo;I host the data.&rdquo;</span>
+          <span class="trinity-label">Anti-Cloud</span>
+        </div>
+        <div class="trinity-item">
+          <span class="trinity-claim">&ldquo;I generate the voltage.&rdquo;</span>
+          <span class="trinity-label">Anti-Grid</span>
+        </div>
+      </div>
+      <p>It turns the act of thinking into an act of farming. You harvest the sun to grow the mind.</p>
+    </div>
+
+    <!-- Commitments -->
+    <div class="section">
+      <p class="section-number">&nbsp;</p>
+      <h2 class="section-title">Commitments</h2>
+      <ul class="commitments-list">
+        <li>Portability <span>over lock-in.</span></li>
+        <li>Receipts <span>over trust.</span></li>
+        <li>Forkability <span>over permission.</span></li>
+        <li>Resilience <span>over efficiency.</span></li>
+      </ul>
+      <p class="requirements">These are not preferences. They are requirements.</p>
+    </div>
+
+    <!-- The Line -->
+    <div class="the-line">
+      <p>We do not want a smarter master.</p>
+      <p class="final">We want a smarter species.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/intellipunk" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://x.com/intellipunkX" target="_blank" rel="noopener">X</a>
+        <a href="https://reddit.com/u/intellipunk" target="_blank" rel="noopener">Reddit</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

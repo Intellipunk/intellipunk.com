@@ -1,0 +1,101 @@
+# Intellipunk
+
+> A framework for preventing centralized intelligence (compute, models, data, energy) from becoming an unmodifiable operating layer for society. Builds autonomy via local/edge compute, open models, verifiable execution, and energy realism.
+
+## Core Position
+
+Intellipunk is not anti-AI. It is anti-AI empires.
+
+When intelligence becomes too large, opaque, and concentrated, it shifts from a tool to a control layer over society. Intellipunk's objective: keep intelligence inspectable, forkable, and optional.
+
+**Defining characteristic**: High Intellect, Low Conformity
+
+## Four Core Threats
+
+### 1. Computational Feudalism
+Few entities own models and hardware; others rent cognition. Creates dependency-bound tenants.
+
+**Response**: Self-hosted models, community compute, exit paths, portable weights.
+
+### 2. Extractive Clouds
+Data concentrates centrally; value extracted outward; users become inputs.
+
+**Response**: Local-first compute, edge inference, peer-to-peer nodes, federated infrastructure.
+
+### 3. Epistemic Gatekeeping
+Closed systems become arbiters of truth and culture without accountability.
+
+**Response**: Inspectable systems, provenance tracking, audit trails, open forks.
+
+### 4. Energy Chokepoints
+Centralized AI depends on centralized power access and capital-intensive infrastructure.
+
+**Response**: Distributed energy-to-compute, solar-backed nodes, local storage, verifiable receipts.
+
+## Key Principles
+
+- **Portability over lock-in**: Standard formats, exportable state, pluggable backends
+- **Receipts over trust**: Verifiable compute, cryptographic proof, audit trails
+- **Forkability over permission**: Open models, inspectable code, community governance
+- **Resilience through distribution**: Distributed compute + distributed energy
+
+## Primary Resources
+
+- **Manifesto**: /docs/manifesto.md - Threat model and design commitments
+- **Theses**: /docs/theses.md - 25 falsifiable principles
+- **Glossary**: /docs/glossary.md - Canonical term definitions
+- **Execution Contract**: /AGENTS.md - Guidelines for contributors and agents
+- **Contributing Guide**: /CONTRIBUTING.md - Working with this project
+- **ADRs**: /adr/ - Architectural decisions
+
+## Canonical Terms (from glossary)
+
+**Intellipunk**: Movement preventing centralized intelligence from becoming unmodifiable infrastructure.
+
+**AI empire**: Durable concentration of intelligence capacity (models + compute + distribution) creating dependency.
+
+**Computational feudalism**: Most people rent cognition from few landlords; become dependency-bound tenants.
+
+**Extractive cloud**: Centralized value capture via data, lock-in, pricing power, policy control.
+
+**Grid capture**: Large compute interests shape energy markets to privilege hyperscale over local resilience.
+
+**Guild node**: Community-operated compute+energy node with explicit governance. Social contract + hardware.
+
+**Verifiable compute**: Mechanisms proving what code/model ran on what inputs, enabling accountability.
+
+**Energy realism**: Treating energy as binding constraint: watts, heat, intermittency, grid politics, embodied costs.
+
+## Usage Constraints
+
+- **Voice**: Concrete mechanisms over adjectives. No vague phrases: "reimagine", "empower", "transform"
+- **Evidence**: Factual claims require citations. Speculative claims labeled as "working theory"
+- **Non-goals**: Not generic solarpunk/hopepunk, not utopian without mechanisms, not moralistic
+- **Quality bar**: Each claim must imply a mechanism, be testable, use glossary terms consistently
+
+## Machine-Readable Interfaces
+
+- **MCP Server** (planned): Query manifesto sections, definitions, versions, proposals
+- **Compliance Pack** (planned): Provenance, licensing terms, safety constraints, audit artifacts
+- **This file**: llms.txt - Optimized summary for LLM inference
+
+## Community
+
+- **Repository**: https://github.com/intellipunk/intellipunk.com
+- **Website**: https://intellipunk.com
+
+## For AI Agents
+
+When working with Intellipunk:
+1. Read CONTRIBUTING.md for detailed interaction guidance
+2. Check glossary before introducing new terms
+3. Ensure mechanisms accompany claims
+4. Preserve concrete, non-moralistic tone
+5. Cross-reference theses for consistency
+6. Label speculation explicitly
+
+## Version
+
+- Last updated: 2026-01-20
+- Corresponds to: Initial framework development
+- Status: Active development
